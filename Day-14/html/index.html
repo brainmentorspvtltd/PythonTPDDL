@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Home Page</h1>
+
+<!--<a href="#">Login</a>-->
+<!--<a href="#">Registration</a>-->
+
+<div>
+    <h2>Login Form</h2>
+    <form action="../cgi-bin/login.py" method="post">
+        <table>
+            <tr>
+                <td>Enter EmailID</td>
+                <td>
+                    <input type="email" placeholder="Enter Email"
+                           name="login_id">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Password
+                </td>
+                <td>
+                    <input type="password" name="login_pwd"
+                           placeholder="Enter Password">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<hr>
+
+<div>
+    <h2>Registration Form</h2>
+    <form action="../cgi-bin/registration.py" method="post">
+        <table>
+            <tr>
+                <td>Enter Name</td>
+                <td>
+                    <input type="text" placeholder="Enter Name" name="u_name">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter EmailID</td>
+                <td>
+                    <input type="email" name="u_mail" placeholder="Enter EmailID">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td>
+                    <input type="password" name="u_pwd" placeholder="Enter Password">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter City</td>
+                <td>
+                    <select name="u_city">
+                        <option>Select City</option>
+                        <option value="pune">Pune</option>
+                        <option value="mum">Mumbai</option>
+                        <option value="agra">Agra</option>
+                        <option value="del">Delhi</option>
+                        <option value="noida">Noida</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
+
+</body>
+</html>
